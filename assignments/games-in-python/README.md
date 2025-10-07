@@ -1,19 +1,44 @@
 
-# 🎮 Hangman Game Challenge
 
-Build the classic word-guessing game using Python strings, loops, and user input.
+# 🎮 Jogo da Forca em Python
 
-## � What You'll Build
+## 🎯 Objetivo
+Construa o clássico jogo da forca utilizando strings, laços e entrada de dados em Python. O estudante irá praticar manipulação de strings, controle de fluxo e lógica condicional.
 
-Create a Hangman game where players guess letters to reveal a hidden word before running out of attempts.
+## 📝 Tarefas
 
-**Skills practiced:** String manipulation, loops, conditionals, random selection
+### 1. Implementar o Jogo da Forca
+**Descrição:**
+Desenvolva um programa que sorteia uma palavra secreta de uma lista e permite ao jogador tentar adivinhar, letra por letra, antes de esgotar o número de tentativas.
 
-## ✅ Must Have's
+**Requisitos:**
+- Sortear uma palavra aleatória de uma lista pré-definida
+- Aceitar palpites de letras do usuário
+- Exibir o progresso atual da palavra (ex: `_ _ a _ a _`)
+- Mostrar as letras já tentadas
+- Controlar e exibir o número de tentativas restantes
+- Encerrar o jogo quando a palavra for descoberta ou as tentativas acabarem
+- Exibir mensagens de vitória ou derrota
 
-Your game must:
-- Randomly select words from a predefined list
-- Accept letter guesses and show current progress (_ _ _ format)
-- Track incorrect guesses remaining
-- End when word is guessed or attempts exhausted
-- Display win/lose messages
+**Exemplo de execução:**
+```
+Palavra: _ _ _ _ _
+Tentativas restantes: 6
+Letras já tentadas: 
+Digite uma letra: a
+
+Palavra: _ a _ a _
+Tentativas restantes: 6
+Letras já tentadas: a
+Digite uma letra: e
+
+Palavra: _ a _ a _
+Tentativas restantes: 5
+Letras já tentadas: a, e
+Digite uma letra: m
+
+Palavra: m a _ a _
+Tentativas restantes: 5
+Letras já tentadas: a, e, m
+... (continua até vencer ou perder)
+```
